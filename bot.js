@@ -1,4 +1,3 @@
-client.user.setActivity(argresult , {type:'LISTENING'});
 const Discord = require('discord.js');
 const fs = require("fs"); 
 const jimp = require('jimp');
