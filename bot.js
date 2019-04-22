@@ -19,4 +19,19 @@ client.user.setStatus("offline")
 });
 
 
+client.on('message', message => {
+    if(!message.channel.guild) return;
+    if(message.content.startsWith('Mping')) { // حقوق مداكس
+        if (message.author.bot) return;
+        if(!message.channel.guild) return;
+        var Bping =`${Math.round(client.ping)}` // Mdax77x CopyRight | Toxic Codes
+                const E1ping = new Discord.RichEmbed()
+        .setTitle('ــــــــــــــــــــــــــــــ')
+        .addField(`**BOT Ping Is** :__${Bping}📶__`,"ــــــــــــــــــــــــــــــ")
+        .setFooter(`Requested by | ${message.author.tag}`) // حقوق مداكس
+        .setColor('RANDOM')
+        message.channel.send(E1ping);
+    }
+});
+
 client.login(process.env.BOT_TOKEN);
