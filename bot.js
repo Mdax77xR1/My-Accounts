@@ -33,5 +33,19 @@ client.on('message', message => {
         message.channel.send(E1ping);
     }
 });
+client.on('message',message =>{
+    if(!message.channel.guild) return;
+if(message.content =='^members')
+var E2Mdax = new Discord.RichEmbed()
 
+setTitle('==========🌷| Members info==========')
+.addField('** Members count👥.:**',`__** [ ${msg.guild.memberCount} ]**__`,true)
+.addField('📗|online',` ${message.guild.members.filter(m=>m.presence.status == 'online').size}`)
+.addField('📓| offline',`${message.guild.members.filter(m=>m.presence.status == 'offline').size}`)
+.setFooter(`Requested By | ${message.author.tag}`)
+.addField('**==============**',true)
+.setColor('RANDOM')
+message.channel.send(E2Mdax);
+}
+});
 client.login(process.env.BOT_TOKEN);
