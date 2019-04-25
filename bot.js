@@ -46,6 +46,5 @@ setTitle('==========🌷| Members info==========')
 .addField('**==============**',true)
 .setColor('RANDOM')
 message.channel.send(E2Mdax);
-}
 });
 client.login(process.env.BOT_TOKEN);
