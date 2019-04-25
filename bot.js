@@ -38,7 +38,7 @@ client.on('message',message =>{
 if(message.content =='^members')
 var E2Mdax = new Discord.RichEmbed()
 
-setTitle('==========🌷| Members info==========')
+.setTitle('==========🌷| Members info==========')
 .addField('** Members count👥.:**',`__** [ ${msg.guild.memberCount} ]**__`,true)
 .addField('📗|online',` ${message.guild.members.filter(m=>m.presence.status == 'online').size}`)
 .addField('📓| offline',`${message.guild.members.filter(m=>m.presence.status == 'offline').size}`)
