@@ -5,7 +5,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
- client.user.setActivity("",{type: 'dnd'})
+ client.user.setActivity("F.L RP https://discord.gg/Rsgyruy",{type: 'dnd'})
   console.log('The Prince : MdAx77x')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
   console.log(`[Start] ${new Date()}`);
@@ -27,16 +27,6 @@ client.on('ready', () => {
   console.log('')
   console.log('')
 });
-  client.on('ready', () => {
-     console.log(`----------------`);
-        console.log(`Welcome to evil gates.`);
-          console.log(`----------------`);
-        console.log(`ON ${client.guilds.size} servers.`);
-      console.log(`----------------`);
-    console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame(`F.L RP https://discord.gg/Rsgyruy`)
-  client.user.setStatus("dnd")
-   
-  });
+
 
 client.login(process.env.BOT_TOKEN);
