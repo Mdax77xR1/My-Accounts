@@ -12,7 +12,7 @@ console.log(`This Code Was Made By : Mdax77x`);
 console.log(`MdAx77x CopyRight `);
  console.log(`ــــــــــــــــ`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setStatus("DND")
+client.user.setStatus("dnd")
  
 });
 
