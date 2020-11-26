@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const fs = require("fs"); 
 const jimp = require('jimp');
 const client = new Discord.Client();
-const perfix = "$"
+const prefix = "$"
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
  client.user.setActivity("F.L RP https://discord.gg/Rsgyruy",{type: 'dnd'})
